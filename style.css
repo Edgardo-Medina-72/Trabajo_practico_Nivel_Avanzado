@@ -38,8 +38,7 @@ nav {
   border-radius: 5px;
   background-color: var(--beige);
   transform: translate(40px, 7px);
-  transition: transform 3s;
-  animation: movimLogo 3s;
+  animation: movimLogo1 3s ease-in-out;
 }
 .pant2 {
   width: 50px;
@@ -47,8 +46,7 @@ nav {
   border-radius: 5px;
   background-color: var(--azulLogo);
   transform: translate(45px, -23px);
-  transition: transform 3s;
-  animation: movimLogo 3s;
+  animation: movimLogo2 3s ease-in-out;
 }
 
 .menu {
@@ -295,22 +293,26 @@ h3 {
   width: 250px;
   margin: auto;
   padding: 10px 100px;
+  cursor: pointer;
 }
 
-@keyframes movimLogo {
+@keyframes movimLogo1 {
   0% {
     opacity: 0;
-  }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  75% {
-    opacity: 0.7;
+    transform: translate(0px, 0px);
   }
   100% {
     opacity: 1;
+    transform: translate(40px, 7px);
+  }
+}
+@keyframes movimLogo2 {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(45px, -23px);
   }
 }
