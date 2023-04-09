@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/imagenes/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Juguemos</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">
+        <div class="logoPC">
+          <div class="pant1"></div>
+          <div class="pant2"></div>
+          <div class="tecl1"></div>
+          <div class="tecl2"></div>
+        </div>
+      </a>
+      <ul class="menu">
+        <li class="li">
+          <a class="botonMenu" href="./historia.html">HISTORIA</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>JUGUEMOS UN POCO</h1>
+    </header>
+    <main>
+      <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+      <section class="contenedorJ">
+        <div class="caja">
+          <div
+            id="div1"
+            ondrop="soltar(event)"
+            ondragover="permitirSoltar(event)"
+            class="tarjetaVacia"
+          >
+            <p>Arrastre y suelte la imágene aquí</p>
+          </div>
+          <div
+            id="div2"
+            ondrop="soltar(event)"
+            ondragover="permitirSoltar(event)"
+            class="tarjetaVacia"
+          >
+            <p>Arrastre y suelte la imágene aquí</p>
+          </div>
+          <div
+            id="div3"
+            ondrop="soltar(event)"
+            ondragover="permitirSoltar(event)"
+            class="tarjetaVacia"
+          >
+            <p>Arrastre y suelte la imágene aquí</p>
+          </div>
+        </div>
+        <div class="tarjetaImag">
+          <img
+            id="drag1"
+            draggable="true"
+            ondragstart="arrastrar(event)"
+            class="imagen1"
+            src="./assets/imagenes/rompe2.png"
+            alt="imagen-rompecabezas"
+          />
+          <img
+            id="drag2"
+            draggable="true"
+            ondragstart="arrastrar(event)"
+            class="imagen2"
+            src="./assets/imagenes/Rompe1.png"
+            alt="imagen-rompecabezas"
+          />
+          <img
+            id="drag3"
+            draggable="true"
+            ondragstart="arrastrar(event)"
+            class="imagen3"
+            src="./assets/imagenes/Rompe3.png"
+            alt="imagen-rompecabezas"
+          />
+        </div>
+      </section>
+      <button class="botonMenu reinicio">Reiniciar</button>
+      <!-- cambiar cursor a manito en hover -->
+    </main>
+    <footer class="piePagina">
+      <div class="contenedorPie">
+        <img class="logo" src="./assets/imagenes/logo.png" alt="logo" />
+        <h3>
+          PROGRAMACION <br />
+          E <br />
+          HISTORIA
+        </h3>
+      </div>
+      <p>Sitio con fines educativos - Creado por M.Victoria Lopez</p>
+    </footer>
+    <script src="./scryptJ.js"></script>
+  </body>
+</html>
