@@ -3,6 +3,9 @@
   font-family: "Montserrat", sans-serif;
   margin: auto 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--azulFondo);
 }
@@ -18,6 +21,8 @@ body {
   --crema: #f0e9d2;
   --negro: #000000;
   --grisOscuro: #1d1d1d;
+  --amarillo: #f4ba1a;
+  --azulFlecha: #3a82b3;
 }
 
 /* Estilos barra de navegación */
@@ -29,24 +34,14 @@ nav {
 
 /* logo computadora */
 .logoPC {
-  width: 140px;
+  width: 200px;
   height: 80px;
 }
-.pant1 {
-  width: 60px;
-  height: 35px;
-  border-radius: 5px;
-  background-color: var(--beige);
-  transform: translate(40px, 7px);
-  animation: movimLogo1 3s ease-in-out;
+.pant {
+  animation: movimLogo1 6s;
 }
-.pant2 {
-  width: 50px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: var(--azulLogo);
-  transform: translate(45px, -23px);
-  animation: movimLogo2 3s ease-in-out;
+.tecl {
+  animation: movimLogo2 5s;
 }
 
 .menu {
@@ -179,6 +174,19 @@ h3 {
   font-size: 14px;
   text-align: center;
 }
+.contenedor {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  opacity: 0;
+}
+.mostrar {
+  opacity: 1;
+  transition: opacity 2s;
+}
 
 /* Pagina historia */
 .contenedorH {
@@ -300,20 +308,19 @@ h3 {
 @keyframes movimLogo1 {
   0% {
     opacity: 0;
-    transform: translate(0px, 0px);
   }
   100% {
     opacity: 1;
-    transform: translate(40px, 7px);
   }
 }
+/* si bien es recomendado siempre usar los mismos metodos para ser prolijos, en este caso se usaron dos distintos a modo de practica */
 @keyframes movimLogo2 {
   0% {
     opacity: 0;
-    transform: translate(0px, 0px);
+    transform: translateY(-60px);
   }
   100% {
     opacity: 1;
-    transform: translate(45px, -23px);
+    transform: translateY(0px);
   }
 }

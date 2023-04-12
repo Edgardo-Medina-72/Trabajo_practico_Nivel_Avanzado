@@ -18,8 +18,16 @@ function soltar(ev) {
 }
 
 /* Reiniciar el juego  */
-document.querySelector(".reinicio").addEventListener("click", reinicio);
+
+const reinicio = document.querySelector(".reinicio");
+reinicio.addEventListener("click", () => {
+  window.location.reload();
+});
+
+/* document.querySelector(".reinicio").addEventListener("click", reinicio);
 
 function reinicio() {
   window.location.reload();
-}
+} */
+
+/* ----------------------------------- */

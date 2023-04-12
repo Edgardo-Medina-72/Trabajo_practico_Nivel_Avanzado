@@ -13,14 +13,58 @@
     <title>Juguemos</title>
   </head>
   <body>
-    <nav>
+    <nav id="nav">
       <a href="index.html">
-        <div class="logoPC">
-          <div class="pant1"></div>
-          <div class="pant2"></div>
-          <div class="tecl1"></div>
-          <div class="tecl2"></div>
-        </div>
+        <svg class="logoPC">
+          <rect
+            class="pant"
+            x="45"
+            y="5"
+            width="60"
+            height="35"
+            rx="5"
+            fill="var(--beige)"
+          >
+            <animate
+              attributeType="auto"
+              attributeName="height"
+              from="-20"
+              to="35"
+              dur="3s"
+              repeatCount="1"
+            ></animate>
+          </rect>
+          <rect
+            class="pant"
+            x="50"
+            y="10"
+            width="50"
+            height="25"
+            rx="5"
+            fill="var(--azulLogo)"
+          >
+            <animate
+              attributeType="auto"
+              attributeName="height"
+              from="-20"
+              to="25"
+              dur="3s"
+              repeatCount="1"
+              begin="500ms"
+            ></animate>
+          </rect>
+          <!--si bien es recomendado siempre usar los mismos metodos para ser prolijos, en este caso se usaron dos distintos a modo de practica-->
+          <polygon
+            class="tecl"
+            points="55 45 ,95 45,120 62,30 62"
+            fill="var(--beige)"
+          ></polygon>
+          <polygon
+            class="tecl"
+            points="57 48 ,93 48,106 58,44 58"
+            fill="var(--azulLogo)"
+          ></polygon>
+        </svg>
       </a>
       <ul class="menu">
         <li class="li">
@@ -101,8 +145,28 @@
           >
         </h3>
       </div>
-      <p>Sitio con fines educativos - Creado por M.Victoria Lopez</p>
+      <p>Sitio con fines educativos - Personalizado por Edgardo A. Medina</p>
+      <!-- Flecha -->
+      <a href="#nav">
+        <svg class="contenedor">
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+            fill="var(--amarillo)"
+            stroke="var(--negro)"
+            strokewidth="1"
+          ></circle>
+          <polygon
+            points="15 28, 25 10, 35 28, 28 25, 28 40, 22 40, 22 25"
+            fill="var(--azulFlecha)"
+            stroke="var(--negro)"
+            strokewidth="1"
+          ></polygon>
+        </svg>
+      </a>
     </footer>
     <script src="./scryptJ.js"></script>
+    <script src="./scriptP.js"></script>
   </body>
 </html>
