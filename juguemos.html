@@ -13,7 +13,7 @@
     <title>Juguemos</title>
   </head>
   <body>
-    <nav id="nav">
+    <nav id="nav" class="flex-between">
       <a href="index.html">
         <svg class="logoPC">
           <rect
@@ -66,18 +66,20 @@
           ></polygon>
         </svg>
       </a>
-      <ul class="menu">
+      <ul class="menu flex-around">
         <li class="li">
-          <a class="botonMenu" href="./historia.html">HISTORIA</a>
+          <a class="botonMenu text-center" href="./historia.html">HISTORIA</a>
         </li>
       </ul>
     </nav>
-    <header>
-      <h1>JUGUEMOS UN POCO</h1>
+    <header class="flex-around">
+      <h1 class="text-center">JUGUEMOS UN POCO</h1>
     </header>
     <main>
-      <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
-      <section class="contenedorJ">
+      <h2 class="text-center">
+        Armemos el rompecabezas y veamos que imagen es...
+      </h2>
+      <section class="contenedorJ flex-column-center">
         <div class="caja">
           <div
             id="div1"
@@ -93,7 +95,7 @@
             ondragover="permitirSoltar(event)"
             class="tarjetaVacia"
           >
-            <p>Arrastre y suelte la imágene aquí</p>
+            <p>Arrastre y suelte la imágen aquí</p>
           </div>
           <div
             id="div3"
@@ -131,12 +133,12 @@
           />
         </div>
       </section>
-      <button class="botonMenu reinicio">Reiniciar</button>
+      <button class="botonMenu text-center reinicio">Reiniciar</button>
     </main>
-    <footer class="piePagina">
-      <div class="contenedorPie">
+    <footer class="piePagina flex-between">
+      <div class="contenedorPie flex-between">
         <img class="logo" src="./assets/imagenes/logo.png" alt="logo" />
-        <h3>
+        <h3 class="text-center">
           <pre>
             PROGRAMACION 
             E 

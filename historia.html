@@ -13,7 +13,7 @@
     <title>Historia</title>
   </head>
   <body>
-    <nav id="nav">
+    <nav id="nav" class="flex-between">
       <a href="index.html">
         <svg class="logoPC">
           <rect
@@ -66,18 +66,20 @@
           ></polygon>
         </svg>
       </a>
-      <ul class="menu">
+      <ul class="menu flex-around">
         <li class="li">
-          <a class="botonMenu" href="./juguemos.html">JUGUEMOS</a>
+          <a class="botonMenu text-center" href="./juguemos.html">JUGUEMOS</a>
         </li>
       </ul>
     </nav>
-    <header>
-      <h1>HISTORIA DE LA PROGRAMACION</h1>
+    <header class="flex-around">
+      <h1 class="text-center">HISTORIA DE LA PROGRAMACION</h1>
     </header>
-    <main class="contenedorH">
-      <div class="tarjetaH">
-        <h2>El principio de la historia de la programación</h2>
+    <main class="contenedorH flex-column-center">
+      <div class="tarjetaH flex-around">
+        <h2 class="text-center">
+          El principio de la historia de la programación
+        </h2>
         <p class="textoInfo">
           El primer lenguaje de programación fue un algoritmo creado por Ada
           Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor
@@ -88,7 +90,7 @@
           cálculo lambda de forma formulativa.
         </p>
       </div>
-      <div class="tarjetaH">
+      <div class="tarjetaH flex-around">
         <p class="textoInfo">
           Los primeros ordenadores modernos (alimentados eléctricamente) fueron
           creados en los años 40. Estas computadoras estaban limitadas en
@@ -101,10 +103,10 @@
           esfuerzo que se requería para escribir los programas en lenguaje
           ensamblador manualmente.
         </p>
-        <h2>Lenguaje de ensamblaje</h2>
+        <h2 class="text-center">Lenguaje de ensamblaje</h2>
       </div>
-      <div class="tarjetaH">
-        <h2>Los primeros lenguajes de programación</h2>
+      <div class="tarjetaH flex-around">
+        <h2 class="text-center">Los primeros lenguajes de programación</h2>
         <div>
           <p>
             FORmulaTRANslation es el lenguaje de programación más antiguo y que
@@ -150,8 +152,8 @@
         </div>
       </div>
     </main>
-    <article class="contenedorVideo">
-      <h2>Un breve video para complementar lo visto</h2>
+    <article class="contenedorVideo flex-column-center">
+      <h2 class="text-center">Un breve video para complementar lo visto</h2>
       <section class="contenedorV">
         <video
           class="video"
@@ -161,7 +163,7 @@
           <source src="./assets/video/historia-Comp.mp4" type="video/mp4" />
           <source src="./assets/video/historia-Comp.ogv" type="video/ogv" />
         </video>
-        <div class="barra">
+        <div class="barra flex-between">
           <div class="botonera">
             <button class="botonV play"></button>
             <button class="botonV pausa"></button>
@@ -174,10 +176,10 @@
       </section>
     </article>
 
-    <footer class="piePagina">
-      <div class="contenedorPie">
+    <footer class="piePagina flex-between">
+      <div class="contenedorPie flex-between">
         <img class="logo" src="./assets/imagenes/logo.png" alt="logo" />
-        <h3>
+        <h3 class="text-center">
           <pre>
             PROGRAMACION 
             E 

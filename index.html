@@ -13,7 +13,7 @@
     <title>Proyecto Nivel Avanzado</title>
   </head>
   <body>
-    <nav id="nav">
+    <nav id="nav" class="flex-between">
       <a href="index.html">
         <svg class="logoPC">
           <rect
@@ -66,47 +66,53 @@
           ></polygon>
         </svg>
       </a>
-      <ul class="menu">
+      <ul class="menu flex-around">
         <li class="li">
-          <a class="botonMenu" href="./historia.html">HISTORIA</a>
+          <a class="botonMenu text-center" href="./historia.html">HISTORIA</a>
         </li>
         <li class="li">
-          <a class="botonMenu" href="./juguemos.html">JUGUEMOS</a>
+          <a class="botonMenu text-center" href="./juguemos.html">JUGUEMOS</a>
         </li>
       </ul>
     </nav>
-    <header>
-      <h1>PROGRAMACION E HISTORIA</h1>
+    <header class="flex-around">
+      <h1 class="text-center">PROGRAMACION E HISTORIA</h1>
     </header>
-    <h2>CONTENIDO</h2>
+    <h2 class="text-center">CONTENIDO</h2>
     <main class="contenedorM">
-      <div class="tarjetaM">
+      <div class="tarjetaM flex-column-center">
         <img
           class="imagenTarjeta"
           src="./assets/imagenes/img1.jpg"
           alt="Técnicos operando computadoras antiguas"
         />
-        <p class="parrafoTarjeta">
+        <p class="parrafoTarjeta text-center">
           Conozcamos Un poco sobre la historia de la programacion
         </p>
-        <a class="botonTarjeta" href="./historia.html">Ir a Historia</a>
+        <a class="botonTarjeta text-center" href="./historia.html"
+          >Ir a Historia</a
+        >
       </div>
 
-      <div class="tarjetaM">
+      <div class="tarjetaM flex-column-center">
         <img
           class="imagenTarjeta"
           src="./assets/imagenes/img2.jpg"
           alt="Dibujo de pantallas y herramientas"
         />
-        <p class="parrafoTarjeta">Juguemos un poco sobre la computacion</p>
-        <a class="botonTarjeta" href="./juguemos.html">Ir a juego</a>
+        <p class="parrafoTarjeta text-center">
+          Juguemos un poco sobre la computacion
+        </p>
+        <a class="botonTarjeta text-center" href="./juguemos.html"
+          >Ir a juego</a
+        >
       </div>
     </main>
 
-    <footer class="piePagina">
-      <div class="contenedorPie">
+    <footer class="piePagina flex-between">
+      <div class="contenedorPie flex-between">
         <img class="logo" src="./assets/imagenes/logo.png" alt="logo" />
-        <h3>
+        <h3 class="text-center">
           <pre>
             PROGRAMACION 
             E 
