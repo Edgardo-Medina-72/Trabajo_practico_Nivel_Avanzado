@@ -17,13 +17,13 @@
       <a href="index.html">
         <svg class="logoPC">
           <rect
-            class="pant"
+            id="marco"
+            class="pant marco"
             x="45"
             y="5"
             width="60"
             height="35"
             rx="5"
-            fill="var(--beige)"
           >
             <animate
               attributeType="auto"
@@ -35,13 +35,13 @@
             ></animate>
           </rect>
           <rect
-            class="pant"
+            id="relleno"
+            class="pant relleno"
             x="50"
             y="10"
             width="50"
             height="25"
             rx="5"
-            fill="var(--azulLogo)"
           >
             <animate
               attributeType="auto"
@@ -55,20 +55,35 @@
           </rect>
           <!--si bien es recomendado siempre usar los mismos metodos para ser prolijos, en este caso se usaron dos distintos a modo de practica-->
           <polygon
-            class="tecl"
+            id="marco"
+            class="tecl marco"
             points="55 45 ,95 45,120 62,30 62"
-            fill="var(--beige)"
           ></polygon>
           <polygon
-            class="tecl"
+            id="relleno"
+            class="tecl relleno"
             points="57 48 ,93 48,106 58,44 58"
-            fill="var(--azulLogo)"
           ></polygon>
         </svg>
       </a>
       <ul class="menu flex-around">
         <li class="li">
           <a class="botonMenu text-center" href="./juguemos.html">JUGUEMOS</a>
+        </li>
+        <li class="li">
+          <button class="botonMenu text-center button" onclick="desplegar()">
+            TEMA
+          </button>
+          <ul class="menuTema">
+            <li class="li">
+              <button id="day" class="boton" onclick="temaDia()">Day</button>
+            </li>
+            <li class="li">
+              <button id="night" class="boton" onclick="temaNoche()">
+                Night
+              </button>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -211,5 +226,6 @@
     </footer>
     <script src="./scrypt.js"></script>
     <script src="./scriptP.js"></script>
+    <script src="./scriptND.js"></script>
   </body>
 </html>
