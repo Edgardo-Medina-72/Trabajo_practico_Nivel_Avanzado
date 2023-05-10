@@ -66,7 +66,13 @@
           ></polygon>
         </svg>
       </a>
-      <ul class="menu flex-around">
+      <img
+        onclick="desplegarM()"
+        class="imagenHamburguesa"
+        src="./assets/imagenes/hamburgues.png"
+        alt="imagen hamburguesa"
+      />
+      <ul id="menu" class="menu flex-around">
         <li class="li">
           <a class="botonMenu text-center" href="./juguemos.html">JUGUEMOS</a>
         </li>
@@ -74,7 +80,7 @@
           <button class="botonMenu text-center button" onclick="desplegar()">
             TEMA
           </button>
-          <ul class="menuTema">
+          <ul class="menuTema posTop">
             <li class="li">
               <button id="day" class="boton" onclick="temaDia()">Day</button>
             </li>
@@ -203,7 +209,9 @@
           >
         </h3>
       </div>
-      <p>Sitio con fines educativos - Personalizado por Edgardo A. Medina</p>
+      <p class="leyenda">
+        Sitio con fines educativos - Personalizado por Edgardo A. Medina
+      </p>
       <!-- Flecha -->
       <a href="#nav">
         <svg class="contenedor">

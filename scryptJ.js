@@ -13,7 +13,8 @@ function soltar(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("figura");
   ev.target.appendChild(document.getElementById(data));
-  ev.target.classList.add("parJuego");
+  //ev.target.classList.add("parJuego");
+  ev.target.classList.add("borderTarjetaVacia");
   ev.target.setAttribute("ondragover", "");
 }
 
@@ -31,3 +32,7 @@ function reinicio() {
 } */
 
 /* ----------------------------------- */
+
+function borrar(ev) {
+  ev.target.classList.add("parJuego");
+}

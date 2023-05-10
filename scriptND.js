@@ -47,3 +47,8 @@ if (infoTema == "dia") {
 } else {
   temaNoche();
 }
+/* ------------------------------------- */
+function desplegarM() {
+  let menu = document.querySelector("#menu");
+  menu.classList.toggle("menu");
+}

@@ -94,6 +94,10 @@ nav {
   font-weight: 300;
   text-decoration: none;
 }
+.imagenHamburguesa {
+  display: none;
+  width: 40px;
+}
 .botonMenuDia {
   background-color: var(--azulLogo);
   color: var(--blanco);
@@ -129,19 +133,7 @@ nav {
 .fondoDia {
   background-color: var(--beige);
 }
-/* 
-.tema-boton {
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  background-color: brown;
-  color: whitesmoke;
-}
-.botonNight {
-  background-color: #7eaaff;
-  color: black;
-}
- */
+
 /* --------------------------------------- */
 /* Estilos encabezado */
 
@@ -194,7 +186,7 @@ main {
 }
 .parrafoTarjeta {
   width: 315px;
-  height: 30px;
+  height: 40px;
   color: var(--azulFondo);
 }
 .botonTarjeta {
@@ -273,6 +265,7 @@ h3 {
 .contenedorVideo {
   padding: 100px 0px;
   justify-content: center;
+  gap: 10px;
 }
 .contenedorV {
   width: 70%;
@@ -315,14 +308,19 @@ h3 {
 
 .caja {
   display: flex;
+  width: 825px;
+  height: 400px;
 }
 .tarjetaVacia {
-  width: 275px;
-  height: 400px;
+  width: 33%;
+  height: 100%;
   border: 2px solid var(--negro);
   background-color: var(--gris);
   display: flex;
   justify-content: center;
+}
+.borderTarjetaVacia {
+  border-width: 2px 0px;
 }
 .tarjetaVacia:hover {
   background-color: var(--grisOscuro);
@@ -368,5 +366,121 @@ h3 {
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@media (max-width: 768px) {
+  .caja {
+    width: 95vw;
+    height: 380px;
+  }
+  .imagen1,
+  .imagen2,
+  .imagen3 {
+    width: 242px;
+    height: 380px;
+  }
+  .leyenda {
+    width: 280px;
+  }
+}
+
+@media (max-width: 360px) {
+  nav {
+    margin: 0px 5px;
+  }
+  .logoPC {
+    width: 150px;
+    height: 80px;
+  }
+  .imagenHamburguesa {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  #menu {
+    flex-direction: column;
+    gap: 5px 0px;
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    padding: 0;
+    margin: 0;
+  }
+  .menuTema {
+    top: 130px;
+  }
+  .posTop {
+    top: 88px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  main {
+    padding: 50px 0px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .contenedorM {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .tarjetaM {
+    width: 330px;
+  }
+  .tarjetaH {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .contenedorH {
+    padding: 0px;
+  }
+  .contenedorH .tarjetaH:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .textoInfo {
+    width: auto;
+  }
+  .contenedorVideo {
+    padding: 50px 0;
+  }
+  .contenedorV {
+    width: 90%;
+  }
+  .botonV {
+    width: 53px;
+  }
+  .botonera {
+    width: 110px;
+  }
+  .piePagina {
+    height: 120px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo {
+    width: 80px;
+  }
+  .caja {
+    width: 95vw;
+    height: 190px;
+  }
+  .tarjetaVacia p {
+    font-size: 12px;
+  }
+  .tarjetaImag {
+    gap: 5px;
+  }
+  .imagen1,
+  .imagen2,
+  .imagen3 {
+    width: 110px;
+    height: 190px;
+  }
+  .leyenda {
+    width: 280px;
   }
 }
